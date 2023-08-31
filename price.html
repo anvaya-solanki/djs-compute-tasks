@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "with=device-width, initial-scale=1.0">
+        <title>Software plan</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link href = "https://fonts.googleleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&isplay=swap" rel = "stylesheet">
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class = "header">
+            <nav>
+                <a href="">BingePro</a>
+                <div class = "nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick = "hideMenu()"></i>
+                    <ul>
+                        <li><a href = "">HOME</a></li>
+                        <li><a href = "">ABOUT</a></li>
+                        <li><a href = "">STORE</a></li>
+                        <li><a href = "">CONTACT US</a></li>
+                        <li><a href = "">LOGIN</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick = "showMenu()"></i>
+            </nav>
+        </section>
+        <section class = "plan">
+            <h1>Plans we offer</h1>
+            <div class = "row">
+                <div class = "plan-col-1">
+                    <h3>Basic</h3>
+                    <li>Price: 149/- per month</li>
+                    <li>Unlimited ad-free movies and TV shows</li>
+                    <li>Watch on 1 phone or tablet at a time</li>
+                    <li>Download on 1 phone or tablet at a time</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+                <div class = "plan-col-2">
+                    <div class = "second">
+                    <h3>Pro</h3>
+                    <li>Price: 299/- per month</li>
+                    <li>Unlimited ad-free movies and TV shows</li>
+                    <li>Watch on 3 phone or tablet at a time</li>
+                    <li>Watch in HD</li>
+                    <li>Download on 2 phone or tablet at a time</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+                </div>
+                <div class = "plan-col-3">
+                    <h3>Premium</h3>
+                    <li>Price: 449/- per month</li>
+                    <li>Unlimited ad-free movies and TV shows</li>
+                    <li>Watch on 5 phone or tablet at a time</li>
+                    <li>Watch in Ultra HD</li>
+                    <li>Download on 3 phone or tablet at a time</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
